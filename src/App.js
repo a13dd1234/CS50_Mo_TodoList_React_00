@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import Hello from "./Hello";
 
-import "./styles.css";
+import Hello from "./Hello";
+import TodoList from "./TodoList";
 
 class App extends Component {
   render() {
     return (
-      <div className="Hello">
+      <div>
         <Hello />
+        <hr />
+        <TodoList />
       </div>
     );
   }
