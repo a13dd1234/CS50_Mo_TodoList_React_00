@@ -7,7 +7,7 @@ export default function TodoList(props) {
       {/* {console.log("todos Array: ", props.todos)} */}
       <ul>
         {props.todos.map(todo => (
-          <TodoItem todo={todo} />
+          <TodoItem key={todo.id} todo={todo} />
         ))}
       </ul>
     </div>

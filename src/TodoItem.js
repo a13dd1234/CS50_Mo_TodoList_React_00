@@ -3,7 +3,7 @@ import React from "react";
 
 export default function TodoItem(props) {
   return (
-    <li key={props.todo.id}>
+    <li>
       <span>{props.todo.text}</span>
       <input type="checkbox" />
       <button>Delet</button>
