@@ -1,11 +1,24 @@
-import React from "react";
-import "./styles.css";
+import React, { Component } from "react";
+import { render } from "react-dom";
 import Hello from "./Hello";
 
-export default function App() {
-  return (
-    <div className="App">
-      <Hello />
-    </div>
-  );
+import "./styles.css";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Hello />
+      </div>
+    );
+  }
 }
+
+export default App;
+// export default function App() {
+//   return (
+//     <div className="App">
+//       <Hello />
+//     </div>
+//   );
+// }
